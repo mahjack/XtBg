@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_5"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5">
+
+                <TextView
+                    android:id="@+id/item_reference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_18" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2">
+
+                <LinearLayout
+                    android:id="@+id/item_remaining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/document_remaining"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/item_countdown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/item_flow"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/selector_flow_btn"
+                    android:gravity="center"
+                    android:text="@string/base_flow"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/item_rebut"-->
+                <!--android:layout_width="@dimen/dimen_50"-->
+                <!--android:layout_height="@dimen/dimen_30"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="@dimen/dimen_60"-->
+                <!--android:background="@drawable/selector_flow_btn"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/base_rebut"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/dimen_16sp" />-->
+
+
+                <TextView
+                    android:id="@+id/item_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_toLeftOf="@id/item_flow"
+                    android:text="区政府办公室"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/dimen_16" />
+
+                <TextView
+                    android:id="@+id/item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_units"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:layout_toLeftOf="@id/item_flow"
+                    android:text="2016-07-03"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/dimen_16" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:src="@mipmap/past" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:background="@color/line_color" />
+</LinearLayout>

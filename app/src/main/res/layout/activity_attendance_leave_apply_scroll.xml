@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:paddingStart="@dimen/dimen_15">
+
+                    <TextView
+                        style="@style/style_text1"
+                        android:text="请假人员" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_2"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <View style="@style/style_line_vertical" />
+
+                    <EditText
+                        android:id="@+id/vacation_person_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:enabled="false"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_50"-->
+            <!--android:paddingLeft="@dimen/dimen_15">-->
+
+            <!--<TextView-->
+            <!--style="@style/style_text1"-->
+            <!--android:text="@string/attendance_department" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="@dimen/dimen_2"-->
+            <!--android:text="*"-->
+            <!--android:textColor="@color/red" />-->
+
+            <!--<View style="@style/style_line_vertical" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/attendance_department_edt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:enabled="false"-->
+            <!--android:textSize="@dimen/dimen_16sp" />-->
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="请假事由" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_reason_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dimen_15"
+                >
+                <TextView
+                    style="@style/style_text1"
+                    android:text="请假类别:" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <com.sdzx.xtbg.view.FlowRadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/radiobutton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公休假"
+                            android:textColor="@color/text_color2"
+                            />
+                        <RadioButton
+                            android:id="@+id/radiobutton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="事假"
+                            android:textColor="@color/text_color2"
+                            />
+                        <RadioButton
+                            android:id="@+id/radiobutton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="病假"
+                            android:textColor="@color/text_color2"
+                            />
+                        <RadioButton
+                            android:id="@+id/radiobutton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="探亲家"
+                            android:textColor="@color/text_color2"
+                            />
+                        <RadioButton
+                            android:id="@+id/radiobutton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="婚假"
+                            android:textColor="@color/text_color2"
+                            />
+                        <RadioButton
+                            android:id="@+id/radiobutton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="产假"
+                            android:textColor="@color/text_color2"
+                            />
+                        <RadioButton
+                            android:id="@+id/radiobutton7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="丧假"
+                            android:textColor="@color/text_color2"
+                            />
+                        <RadioButton
+                            android:id="@+id/radiobutton8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="其他"
+                            android:textColor="@color/text_color2"
+                            />
+                    </com.sdzx.xtbg.view.FlowRadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/vacation_start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_start_date"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择日期" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_start_time"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择时间" />
+
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/vacation_end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_end_date"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择日期" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_end_time"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择时间" />
+
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="请假天数" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_count_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="请填写休假天数"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/meeting_audit_lin"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_15"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/meeting_audit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_choice_approve"
+                    style="@style/style_text2"
+                    android:layout_width="match_parent"
+                    android:hint="选择审批人" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/checkdx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/selector_ll"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:text="短信通知"
+                    android:textColor="@color/text_color1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

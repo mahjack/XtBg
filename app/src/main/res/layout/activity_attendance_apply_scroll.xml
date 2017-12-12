@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:paddingStart="@dimen/dimen_15">
+
+                    <TextView
+                        style="@style/style_text1"
+                        android:text="@string/vacation_person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_2"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <View style="@style/style_line_vertical" />
+
+                    <EditText
+                        android:id="@+id/vacation_person_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:enabled="false"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="职        务" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/attendance_department_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="参加工作时间" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_reason_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="工作年限" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_reason_nianxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="本年度应休假天数" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_xjday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="上年度调休天数" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_txday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="本年度已休假天数" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_yxjday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="本次休假天数" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_bcxjday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/vacation_start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_start_date"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择日期" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_start_time"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择时间" />
+
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/vacation_end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_end_date"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择日期" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_end_time"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择时间" />
+
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/vacation_days" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/vacation_count_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="请填写休假天数"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/meeting_audit_lin"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_15"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/meeting_audit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_choice_approve"
+                    style="@style/style_text2"
+                    android:layout_width="match_parent"
+                    android:hint="选择审批人" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

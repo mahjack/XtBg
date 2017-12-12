@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_approve_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="张全蛋"
+        android:paddingLeft="@dimen/dimen_20"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/check_box_approve"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

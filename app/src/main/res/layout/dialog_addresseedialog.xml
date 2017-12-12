@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog_contactsdialog_all"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_addresseedialog_Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_corners_top"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_addresseedialog_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_addresseedialog_OK"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners_down_left"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <View
+            android:layout_width="@dimen/dimen_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/dialog_addresseedialog_NO"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners_down_right"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14sp" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/dialog_addresseedialog_ExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dialog_addresseedialog_LinearLayout"
+        android:layout_below="@id/dialog_addresseedialog_Title"
+        android:divider="@color/line_color"
+        android:dividerHeight="@dimen/dimen_0.5"
+        android:footerDividersEnabled="false"
+        android:groupIndicator="@null"
+        android:headerDividersEnabled="false" />
+</RelativeLayout>

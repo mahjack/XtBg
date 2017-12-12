@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">协同办公</string>
+    <string name="app_update">协同办公下载中······</string>
+    <string name="app_name_about">协同办公平台</string>
+    <string name="viewpager_indicator" formatted="false">%d/%d</string>
+
+    <!-- 基础 -->
+    <string name="base_back">返回</string>
+    <string name="base_submit">提交</string>
+    <string name="base_server">访问服务器失败！</string>
+    <string name="base_welcome">欢迎您：</string>
+    <string name="base_flow">流程</string>
+    <string name="base_rebut">驳回</string>
+    <string name="base_new">已是最新版本！</string>
+    <string name="base_search">输入搜索关键字</string>
+    <string name="login_posting">正在登录，请稍候</string>
+    <string name="loading_press">请稍候，正在提交...</string>
+    <string name="dialog_btn_confim">确认</string>
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="dialog_title_alert">提示</string>
+    <string name="refresh_loading">数据加载中······</string>
+    <string name="about_us_content">地址：\n山东省日照市东港区烟台北路16号\n电话：8787558</string>
+
+
+    <!--权限-->
+    <string name="perm_tip">当前应用缺少必要权限。\n请点击"设置"-"权限"-打开所需权限。\n最后点击两次后退按钮，即可返回。</string>
+    <string name="ask_again">请给予应用必要权限，让程序可正常工作。</string>
+    <string name="permission_location">请开启位置权限</string>
+    <string name="permission_storage">请开启读取内存卡权限</string>
+    <string name="permission_phone">请开启电话权限</string>
+    <string name="permission_camera">请开启相机权限</string>
+    <string name="permission_sms">请开启短信权限</string>
+    <!-- Main -->
+    <string name="main_home">首页</string>
+    <string name="main_mail">邮件</string>
+    <string name="main_book">通讯录</string>
+    <string name="main_read">沟通</string>
+    <string name="daily_title">首页</string>
+    <string name="manage_title">管理</string>
+    <string name="book_title">邮件</string>
+    <string name="tool_title">通讯录</string>
+    <!-- 登录 -->
+    <string name="login_username">登录账户</string>
+    <string name="login_password">账户密码</string>
+    <string name="login_text">登录</string>
+    <string name="login_auto">记住密码</string>
+    <string name="login_error1">用户名和密码不能为空</string>
+    <string name="login_error2">用户名不存在</string>
+    <string name="login_error3">口令不正确</string>
+    <string name="login_error4">用户被锁定</string>
+    <string name="login_status">登录成功</string>
+    <string name="login_appName">协同办公平台</string>
+    <string name="login_copyright">版权所有：山东至信信息科技有限公司</string>
+    <string name="login_copyright_Eng">© 2015-2016 All rights reserved. </string>
+    <!-- 主页 -->
+    <string name="sliding_setting">设置</string>
+    <string name="sliding_suggestions">建言献策</string>
+    <string name="sliding_feedback">协同反馈</string>
+    <string name="sliding_company">公司制度</string>
+    <!-- 首页 -->
+    <string name="home_document">来文管理</string>
+    <string name="send_document">发文管理</string>
+    <string name="home_multipoint">多点分发</string>
+    <string name="home_supervise">督察督办</string>
+    <string name="home_mail">邮件管理</string>
+    <string name="home_in_doc">内网文件</string>
+    <string name="home_signet">物品管理</string>
+    <string name="home_read">信息中心</string>
+    <string name="home_pending">待定</string>
+    <string name="home_meeting">会议管理</string>
+    <string name="home_attendance">请（休）假</string>
+    <string name="home_kaoqin">签到</string>
+    <string name="home_office">行政办公</string>
+    <string name="home_cache">执法监察</string>
+    <string name="home_service">公务接待</string>
+    <!-- 日志 -->
+    <string name="logged_login">登录日志</string>
+    <string name="logged_operation">操作日志</string>
+    <!-- 意见反馈 -->
+    <string name="sliding_input">请提出您宝贵的意见和建议</string>
+    <!-- 设置 -->
+    <string name="sliding_password">密码设置</string>
+    <string name="sliding_mobile">手机号</string>
+    <string name="sliding_safe">安全设置</string>
+    <string name="sliding_notice">信息通知</string>
+    <string name="sliding_check">检测更新</string>
+    <string name="sliding_cache">清除缓存</string>
+    <string name="sliding_exit">退出登录</string>
+    <string name="sliding_about">关于</string>
+    <string name="sliding_head">头像</string>
+    <string name="sliding_qr">二维码</string>
+    <string name="sliding_qr_my">我的二维码</string>
+    <string name="sliding_qr_text">扫描二维码，下载APP</string>
+    <string name="about_name">办公平台</string>
+    <string name="about_company">山东至信信息科技有限公司</string>
+    <string name="about_website"><a href="http://www.zxxxkj.com/"> http://www.zxxxkj.com/ </a></string>
+    <!-- 来文管理 -->
+    <string name="document_title">公文管理</string>
+    <string name="document_backlog">待办文件</string>
+    <string name="document_consulted">查阅文件</string>
+    <string name="document_handling">正在办理</string>
+    <string name="document_deadline">截止日期</string>
+    <string name="document_remaining">剩余时间：</string>
+    <!-- 通讯录 -->
+    <string name="search_header">搜</string>
+    <string name="address_text">管理员</string>
+    <string name="address_mail">群发短信</string>
+    <string name="address_message">发送短信</string>
+    <!-- 邮件 -->
+    <string name="mail_received">已收邮件</string>
+    <string name="mail_have">已发邮件</string>
+    <string name="mail_inbox">收件箱</string>
+    <string name="mail_outbox">发件箱</string>
+    <string name="mail_fail">发送失败！</string>
+    <string name="mail_success">发送成功！</string>
+    <!-- 邮件详情 -->
+    <string name="fileCannotRead">文件不可读</string>
+    <string name="fileSelected">文件选择</string>
+    <string name="mail_sender">发件人：</string>
+    <string name="mail_receiver">收件人：</string>
+    <string name="mail_subject">邮件标题：</string>
+    <string name="mail_send_time">发送时间：</string>
+    <string name="mail_text">邮件内容</string>
+    <string name="mail_reply">回复</string>
+    <string name="mail_reply_title">回复邮件</string>
+    <string name="mail_forward_title">转发邮件</string>
+    <string name="mail_new_title">新建邮件</string>
+    <string name="mail_forward">转发</string>
+    <string name="mail_delete">删除</string>
+    <string name="mail_select_attachment">附件：</string>
+    <string name="mail_select_all">全选</string>
+    <string name="mail_cancel">取消</string>
+    <string name="mail_confirm">确定</string>
+    <string name="mail_chose_receiver">选择收件人</string>
+    <!-- 文件详情 -->
+    <string name="document_details">来文详情</string>
+    <string name="document_incoming_time">收文时间</string>
+    <string name="document_office">来文机关</string>
+    <string name="document_number">编\u0008\u0008\u0008\u0008\u0008\u0008号</string>
+    <string name="document_way">来文方式</string>
+    <string name="document_file_number">文\u0008\u0008件\u0008号</string>
+    <string name="document_file_quantity">来文份数</string>
+    <string name="document_expiration">截止日期</string>
+    <string name="document_create_date">成文日期</string>
+    <string name="document_file_title">文件标题：</string>
+    <string name="document_file_content">来文内容:</string>
+    <string name="document_opinion">拟办意见：</string>
+    <string name="document_agreement">领导批示：</string>
+    <string name="document_reading">领导阅示：</string>
+    <string name="document_result">办理结果：</string>
+    <string name="document_case">办结情况：</string>
+    <string name="document_result_case">办理情况：</string>
+    <string name="document_recipient">请选择接收人</string>
+    <string name="document_btn0">拟办</string>
+    <string name="document_btn1">分发</string>
+    <string name="document_btn2">批示</string>
+    <string name="document_btn3">阅示</string>
+    <string name="document_btn4">办理</string>
+    <string name="document_btn5">分办</string>
+    <string name="document_btn8">办结</string>
+    <string name="document_input">请输入意见</string>
+    <string name="document_message">短信通知</string>
+    <string name="document_agree">同意</string>
+    <string name="document_read">已阅</string>
+    <string name="document_agree_idea">同意拟办意见</string>
+    <string name="document_opinion2">拟办意见：</string>
+    <string name="document_opinion3">批示意见：</string>
+    <string name="document_opinion4">分发意见：</string>
+    <string name="document_opinion5">阅示意见：</string>
+    <string name="document_opinion6">分办意见</string>
+    <string name="document_opinion7">办理意见：</string>
+    <string name="document_opinion8">办结总结</string>
+    <string name="document_leader">领导阅示</string>
+    <string name="document_office_text">科室办理</string>
+    <string name="document_department">科室分办</string>
+    <string name="document_man">分办人</string>
+    <string name="document_message_hint">请编辑通知短信</string>
+
+    <!-- 督察督办 -->
+    <string name="supervise_system">进入督办系统</string>
+    <string name="supervise_situation">办理情况</string>
+    <string name="supervise_edit">编辑</string>
+    <string name="supervise_cancel">取消督办</string>
+    <string name="supervise_deadline">截止日期</string>
+    <string name="supervise_required">* 必选</string>
+    <string name="supervise_leader">分管领导</string>
+    <string name="supervise_handle">督办人</string>
+    <string name="supervise_department">牵头科室</string>
+
+    <!-- 会议服务 -->
+    <string name="meeting_apply">会议申请</string>
+    <string name="meeting_approval">会议审批</string>
+    <string name="meeting_consult">会议查阅</string>
+    <string name="meeting_edit">会议编辑</string>
+    <string name="meeting_theme">会议主题</string>
+    <string name="meeting_room">会议室</string>
+    <string name="meeting_addr">会议地点</string>
+    <string name="meeting_time">时间</string>
+    <string name="meeting_time_period">会议召开时间段</string>
+    <string name="meeting_person_num">参加人数</string>
+    <string name="meeting_host">主持人</string>
+    <string name="meeting_participation">参加范围</string>
+    <string name="meeting_remark">备注</string>
+    <string name="meeting_audit">审批人</string>
+    <string name="meeting_remaining">时间：</string>
+    <string name="meeting_opinion">审核意见</string>
+    <string name="meeting_state">状态</string>
+    <string name="meeting_department">申请部门</string>
+    <string name="meeting_proposer">申请人</string>
+
+    <!-- 考勤管理 -->
+    <string name="vacation_apply">休假申请</string>
+    <string name="vacation_approval">休假审批</string>
+    <string name="vacation_consult">休假查阅</string>
+    <string name="vacation_edit">休假编辑</string>
+    <string name="leave_apply">请(休)假申请</string>
+    <string name="leave_approval">请(休)假审批</string>
+    <string name="leave_consult">请(休)假查阅</string>
+    <string name="leave_edit">请(休)假编辑</string>
+    <string name="business_apply">出差申请</string>
+    <string name="business_approval">出差审批</string>
+    <string name="business_consult">出差查阅</string>
+    <string name="business_edit">出差编辑</string>
+    <string name="vacation_person">休假人员</string>
+    <string name="attendance_department">所属部门</string>
+    <string name="vacation_reason">休假事由</string>
+    <string name="vacation_start">开始时间</string>
+    <string name="vacation_end">结束时间</string>
+    <string name="vacation_days">休假天数</string>
+
+    <!-- 印鉴管理 -->
+    <string name="signet_apply_name">申请人:</string>
+    <string name="signet_audit_time">时间:</string>
+    <string name="signet_audit_company">用印单位:</string>
+    <string name="signet_audit_reason">事由:</string>
+    <string name="signet_audit_type">印章类型:</string>
+    <string name="signet_audit_classify">用印分类:</string>
+    <string name="signet_audit_attachment">附件:</string>
+    <string name="signet_audit_departments">科室审核意见:</string>
+    <string name="signet_audit_leader">分管领导审核意见:</string>
+    <string name="signet_audit_director">领导审核意见:</string>
+    <string name="signet_audit_opinion">审核意见</string>
+    <string name="signet_message_hint">您有一份印鉴使用申请需要审核</string>
+    <string name="signet_audit_opinion_hint">请填写审核意见</string>
+    <string name="signet_audit_choice_auditor">请选择审核人</string>
+
+    <!-- 内网 -->
+    <string name="intranet_document_title">内网文件</string>
+    <string name="intranet_mail_title">内网邮件</string>
+    <string name="intranet_title">标题：</string>
+    <string name="intranet_no.">文号：</string>
+    <string name="intranet_sender">发送人：</string>
+    <string name="intranet_time">发文时间：</string>
+    <string name="intranet_theme">主题词：</string>
+    <string name="intranet_content">发文内容</string>
+    <string name="intranet_mail_content">邮件内容</string>
+
+    <!-- Dialog -->
+    <string name="dialog_positive">确定</string>
+    <string name="dialog_negative">取消</string>
+    <string name="dialog_cache">您确定要清除缓存吗？</string>
+    <!-- 上拉加载，下拉刷新 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <string name="refreshing">正在加载…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="writing_pad">手写板</string>
+    <string name="writing_pad_save">保存</string>
+    <string name="writing_pad_delete">清空</string>
+</resources>

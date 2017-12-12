@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <!--总体布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--头布局-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50">
+
+                    <TextView
+                        android:id="@+id/tv_mail_receiver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:text="@string/mail_receiver"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                    <EditText
+                        android:id="@+id/et_mail_receiver"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="添加收件人"
+                        android:textColor="@color/text_color1"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_mail_add_receiver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:src="@mipmap/add_receiver" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/darkgrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50">
+
+                    <TextView
+                        android:id="@+id/tv_mail_sender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:text="@string/mail_sender"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                    <EditText
+                        android:id="@+id/et_mail_sender"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textColor="@color/text_color1"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/darkgrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50">
+
+                    <TextView
+                        android:id="@+id/tv_mail_motif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:text="@string/mail_subject"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                    <EditText
+                        android:id="@+id/et_mail_subject"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入标题"
+                        android:textColor="@color/text_color1"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/darkgrey" />
+
+
+            </LinearLayout>
+
+            <!--正文及附件-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_2"
+                android:paddingRight="@dimen/dimen_2"
+                android:paddingTop="@dimen/dimen_2">
+
+                <!--邮件正文-->
+                <EditText
+                    android:id="@+id/et_mail_detail_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="请输入内容"
+                    android:padding="@dimen/dimen_10"
+                    android:singleLine="false"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/dimen_16sp" />
+                <!--附件图标-->
+                <ImageView
+                    android:id="@+id/iv_mail_attachment"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:src="@mipmap/mail_attachment" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mail_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="visible"> <!--控制显示隐藏-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/darkgrey" />
+
+                    <TextView
+                        style="@style/style_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:text="@string/mail_select_attachment"
+                        android:layout_marginLeft="@dimen/dimen_10" />
+
+                    <com.sdzx.xtbg.view.NoScrollListView
+                        android:id="@+id/mail_files_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@null"
+                        android:divider="@color/line_color"
+                        android:dividerHeight="@dimen/dimen_0.5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

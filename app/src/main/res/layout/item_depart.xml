@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/depart_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_30"
+        android:textColor="@color/text_color2"
+        android:text="lingdao"
+        android:textSize="@dimen/dimen_14sp"
+        android:background="@color/text_color4"
+        android:gravity="center_vertical"/>
+    <com.sdzx.xtbg.view.NoScrollListView
+        android:id="@+id/user_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/line_color"
+        android:dividerHeight="@dimen/dimen_0.5"/>
+</LinearLayout>

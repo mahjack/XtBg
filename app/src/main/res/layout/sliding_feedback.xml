@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow">
+    <include layout="@layout/activity_header"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:padding="@dimen/dimen_10"
+        android:textSize="@dimen/dimen_14sp"
+        android:hint="@string/sliding_input"
+        android:gravity="start"
+        android:background="@drawable/shape_edit"
+        android:layout_margin="@dimen/dimen_5"/>
+    <Button
+        android:id="@+id/sliding_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_margin="@dimen/dimen_10"
+        android:background="@drawable/selector_btn"
+        android:text="@string/base_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_18sp"/>
+</LinearLayout>

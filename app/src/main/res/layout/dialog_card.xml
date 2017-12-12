@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_150"
+                android:background="@drawable/shape_card_top"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dialog_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_card_bottom"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/dialog_list"
+                    android:background="@drawable/shape_progress_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@null"
+                    android:divider="@color/line_color"
+                    android:dividerHeight="@dimen/dimen_0.5" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dialog_icon"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/default_face"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

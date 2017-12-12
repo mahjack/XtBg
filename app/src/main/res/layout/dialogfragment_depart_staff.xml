@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_depart_dialog_bg">
+
+    <RelativeLayout
+        android:id="@+id/depart_staff_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@drawable/shape_dialog_top_corner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="接收人"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/depart_staff_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <ExpandableListView
+        android:id="@+id/depart_staff_expand_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/depart_staff_header" />
+
+</RelativeLayout>

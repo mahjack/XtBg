@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/snow"
+        android:orientation="vertical">
+        <!-- 休假管理 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/vacation_apple_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/vacation_apply_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/vacation_apply"
+                    android:src="@mipmap/vacation_apply" />
+
+                <TextView
+                    android:id="@+id/vacation_apply_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/vacation_apply_img"
+                    android:text="@string/vacation_apply"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/vacation_approval_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/vacation_approval_img"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/vacation_approval"
+                    android:src="@mipmap/vacation_approval" />
+
+                <TextView
+                    android:id="@+id/vacation_approval_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/vacation_approval_img"
+                    android:text="@string/vacation_approval"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/unread_leave_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_30"
+                    android:background="@drawable/shape_red_circle"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/vacation_consult_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/vacation_consult_img"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/vacation_consult"
+                    android:src="@mipmap/vacation_consult" />
+
+                <TextView
+                    android:id="@+id/vacation_consult_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/vacation_consult_img"
+                    android:text="@string/vacation_consult"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_0.5"-->
+            <!--android:layout_marginLeft="@dimen/dimen_12"-->
+            <!--android:layout_marginRight="@dimen/dimen_12"-->
+            <!--android:background="@color/line_color" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/vacation_edit_rel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_40"-->
+            <!--android:background="@drawable/selector_ll"-->
+            <!--android:clickable="true" >-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/vacation_edit_img"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:src="@mipmap/vacation_edit"-->
+            <!--android:contentDescription="@string/vacation_edit" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/vacation_edit_txt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="12dp"-->
+            <!--android:layout_toEndOf="@id/vacation_edit_img"-->
+            <!--android:text="@string/vacation_edit"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+        </LinearLayout>
+        <!-- 请假管理 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/leave_apply_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/leave_apply_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/leave_apply"
+                    android:src="@mipmap/leave_apply" />
+
+                <TextView
+                    android:id="@+id/leave_apply_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/leave_apply_img"
+                    android:text="@string/leave_apply"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/leave_approval_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/leave_approval_img"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/leave_approval"
+                    android:src="@mipmap/leave_approval" />
+
+                <TextView
+                    android:id="@+id/leave_approval_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/leave_approval_img"
+                    android:text="@string/leave_approval"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/unread_atten_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_30"
+                    android:background="@drawable/shape_red_circle"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/leave_consult_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/leave_consult_img"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/leave_consult"
+                    android:src="@mipmap/leave_consult" />
+
+                <TextView
+                    android:id="@+id/leave_consult_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/leave_consult_img"
+                    android:text="@string/leave_consult"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_0.5"-->
+            <!--android:layout_marginLeft="@dimen/dimen_12"-->
+            <!--android:layout_marginRight="@dimen/dimen_12"-->
+            <!--android:background="@color/line_color" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/leave_edit_rel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_40"-->
+            <!--android:background="@drawable/selector_ll"-->
+            <!--android:clickable="true" >-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/leave_edit_img"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:src="@mipmap/leave_edit"-->
+            <!--android:contentDescription="@string/leave_edit" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/leave_edit_txt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="12dp"-->
+            <!--android:layout_toEndOf="@id/leave_edit_img"-->
+            <!--android:text="@string/leave_edit"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+        </LinearLayout>
+        <!-- 出差管理 -->
+        <LinearLayout
+            android:id="@+id/cc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/business_apply_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/business_apply_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/business_apply"
+                    android:src="@mipmap/business_apply" />
+
+                <TextView
+                    android:id="@+id/business_apply_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/business_apply_img"
+                    android:text="@string/business_apply"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/business_approval_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/business_approval_img"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/business_approval"
+                    android:src="@mipmap/business_approval" />
+
+                <TextView
+                    android:id="@+id/tv_inquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/business_approval_img"
+                    android:text="@string/business_approval"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/unread_business_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_30"
+                    android:background="@drawable/shape_red_circle"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/business_consult_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@drawable/selector_ll"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/business_consult_img"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="@string/business_consult"
+                    android:src="@mipmap/business_consult" />
+
+                <TextView
+                    android:id="@+id/tv_attendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/business_consult_img"
+                    android:text="@string/business_consult"
+                    android:textColor="#353535"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_0.5"-->
+            <!--android:layout_marginLeft="@dimen/dimen_12"-->
+            <!--android:layout_marginRight="@dimen/dimen_12"-->
+            <!--android:background="@color/line_color" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/business_edit_rel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_40"-->
+            <!--android:background="@drawable/selector_ll"-->
+            <!--android:clickable="true" >-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/business_edit_img"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:src="@mipmap/business_edit"-->
+            <!--android:contentDescription="@string/business_edit" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/business_edit_txt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="12dp"-->
+            <!--android:layout_toEndOf="@id/business_edit_img"-->
+            <!--android:text="@string/business_edit"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

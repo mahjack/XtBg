@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_10">
+
+    <TextView
+        android:id="@+id/apply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="休假人员：张全蛋"
+        android:textSize="@dimen/dimen_18sp" />
+
+    <TextView
+        android:id="@+id/apply_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/dimen_18sp" />
+
+    <TextView
+        android:id="@+id/approval_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apply_name"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="请假事由"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/approval_reason"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/business_place"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="出差地点"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/business_traffic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="交通工具"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/approval_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_traffic"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="2016-05-24 起至 2016-05-24 共计 3 天"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/business_addTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/approval_time"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/approval_flow"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/business_addTime"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/selector_flow_btn"
+        android:gravity="center"
+        android:text="@string/base_flow"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <TextView
+        android:id="@+id/approval_edit"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_below="@id/business_addTime"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_toStartOf="@id/approval_flow"
+        android:background="@drawable/selector_edit_btn"
+        android:gravity="center"
+        android:text="@string/supervise_edit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp" />
+
+</RelativeLayout>

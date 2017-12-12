@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/dimen_5"
+    android:paddingStart="5dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        android:id="@+id/item_meeting_month"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_4"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="2012-02"
+                        android:textColor="@color/text_color1"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                    <TextView
+                        android:id="@+id/item_meeting_day"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:gravity="center|top"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="12"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/dimen_20sp" />
+
+                    <TextView
+                        android:id="@+id/item_meeting_ap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="8dip"
+                        android:paddingRight="8dip"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="上午"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/dimen_15sp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/line_color" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:background="@mipmap/checking" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/right_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_toEndOf="@+id/left"
+                android:background="@drawable/selector_firststate_item"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+                <!--<TextView-->
+                <!--android:id="@+id/item_meeting_room"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxWidth="100dip"-->
+                <!--android:layout_marginStart="@dimen/dimen_10"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="大会议室1005"-->
+                <!--android:textColor="@color/main_color"-->
+                <!--android:textSize="@dimen/dimen_18sp" />-->
+                <TextView
+                    android:id="@+id/item_meeting_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:maxWidth="100dip"
+                    android:text="研究日发人才科技（太公宾馆）有关事宜"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_meeting_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_10"
+                        android:text="11111"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_10"
+                        android:text=""
+                        android:textColor="@color/text_color1"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                    <TextView
+                        android:id="@+id/item_meeting_end"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_10"
+                        android:text="2222222"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

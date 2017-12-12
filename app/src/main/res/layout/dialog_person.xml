@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/btnCancle"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_style"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:text="返回"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                android:text="@string/base_back"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnAll"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_style"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/dialog_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:text="@string/mail_select_all"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#ECEFF0" >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lvListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#DADBDA"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:visibility="visible"/>
+            <!--<ExpandableListView-->
+                <!--android:id="@+id/elv_selectPerson"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="top"-->
+                <!--android:background="@color/white"-->
+                <!--android:cacheColorHint="@null"-->
+                <!--android:childDivider="@null"-->
+                <!--android:divider="@null"-->
+                <!--android:groupIndicator="@null"-->
+                <!--android:scrollbars="none"-->
+                <!--android:scrollingCache="@null" />-->
+            <ProgressBar
+                android:id="@+id/dialog_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/dialog_noData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/red"
+                android:text="无分办人！"
+                android:background="@color/white"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DADBDA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/alert_cancel"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_style"
+            android:text="@string/mail_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADBDA" />
+
+        <Button
+            android:id="@+id/alert_ensure"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_style"
+            android:text="@string/mail_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+</LinearLayout>

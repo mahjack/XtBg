@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:paddingStart="@dimen/dimen_15">
+
+                    <TextView
+                        android:paddingRight="@dimen/dimen_16"
+                        style="@style/style_text1"
+                        android:text="经办人" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_2"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <View style="@style/style_line_vertical" />
+
+                    <EditText
+                        android:id="@+id/business_person_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:enabled="false"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_50"-->
+            <!--android:paddingLeft="@dimen/dimen_15">-->
+
+            <!--<TextView-->
+            <!--style="@style/style_text1"-->
+            <!--android:text="@string/attendance_department" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="@dimen/dimen_2"-->
+            <!--android:text="*"-->
+            <!--android:textColor="@color/red" />-->
+
+            <!--<View style="@style/style_line_vertical" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/attendance_department_edt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:enabled="false"-->
+            <!--android:textSize="@dimen/dimen_16sp" />-->
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差人员" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="人员职务" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差事由" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差地点" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="住宿标准" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_zs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:visibility="gone"
+                android:background="@color/line_color" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="交通工具" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:visibility="gone"
+                android:background="@color/line_color" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差总人数" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_renshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_attendance_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:paddingStart="@dimen/dimen_15"
+                >
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差交通补贴" />
+
+                <View style="@style/style_line_vertical" />
+
+                <RadioGroup
+                    android:id="@+id/business_state_rad"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/business_state_n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color2"
+                        android:text="市内80元/天/人" />
+
+                    <RadioButton
+                        android:id="@+id/business_state_y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color2"
+                        android:text="市外50元/天/人" />
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:visibility="gone"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:visibility="gone"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差伙食补助" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_bz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:visibility="gone"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:visibility="gone"
+                android:paddingStart="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差补助合计" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_bzhj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:visibility="gone"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:paddingStart="@dimen/dimen_15"
+                >
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="结算方式" />
+
+                <View style="@style/style_line_vertical" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobutton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color2"
+                        android:text="公务卡" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color2"
+                        android:text="转账" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color2"
+                        android:text="现金" />
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/vacation_start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_start_date"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择日期" />
+
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/vacation_end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_end_date"
+                    style="@style/style_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="选择日期" />
+
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差天数" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <EditText
+                    android:id="@+id/business_apply_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="请填写出差天数"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/meeting_audit_lin"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_15"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/meeting_audit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/vacation_choice_approve"
+                    style="@style/style_text2"
+                    android:layout_width="match_parent"
+                    android:hint="选择审批人" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkdx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/selector_ll"
+                android:paddingLeft="@dimen/dimen_10"
+                android:text="短信通知"
+                android:textColor="@color/text_color1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

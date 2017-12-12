@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color4"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/details_header"
+        layout="@layout/activity_header" />
+
+    <include layout="@layout/content_send_document_details" />
+
+</LinearLayout>

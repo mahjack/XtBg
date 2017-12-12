@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#ECEFF0">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ExpandableListView
+                android:id="@+id/elv_selectPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/white"
+                android:cacheColorHint="@null"
+                android:childDivider="@null"
+                android:divider="@null"
+                android:groupIndicator="@null"
+                android:scrollbars="none"
+                android:scrollingCache="@null" />
+
+            <ProgressBar
+                android:id="@+id/dialog_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/dialog_noData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="无分办人！"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_20sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DADBDA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alert_cancel"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_style"
+            android:text="@string/mail_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADBDA" />
+
+        <Button
+            android:id="@+id/alert_ensure"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_style"
+            android:text="@string/mail_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+</LinearLayout>

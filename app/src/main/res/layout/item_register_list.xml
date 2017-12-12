@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_5"
+    android:paddingLeft="@dimen/dimen_10"
+    android:paddingRight="@dimen/dimen_10"
+    android:paddingTop="@dimen/dimen_5">
+
+    <TextView
+        android:id="@+id/item_register_List_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="【李婷婷】"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/item_register_List_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="烟台北路16号"
+        android:textColor="@color/text_color2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_register_List_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="签到时间：2016-01-02"
+        android:textColor="@color/orange"
+        android:textSize="17sp" />
+
+
+</LinearLayout>

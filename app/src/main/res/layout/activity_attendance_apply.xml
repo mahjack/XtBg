@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow">
+    <include layout="@layout/activity_header_2"
+        android:id="@+id/meeting_header"/>
+    <include layout="@layout/activity_bottom"
+        android:id="@+id/meeting_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    <include layout="@layout/activity_attendance_leave_apply_scroll"
+        android:layout_below="@id/meeting_header"
+        android:layout_above="@id/meeting_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

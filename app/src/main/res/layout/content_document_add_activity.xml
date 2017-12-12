@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:paddingRight="7dp"
+                android:text="收文类别：" />
+
+            <View style="@style/style_line_vertical" />
+
+            <com.sdzx.xtbg.view.FlowRadioGroup
+                android:id="@+id/document_add_type_flowRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/quzhengfu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="市政府文件"
+                    android:textColor="@color/text_color2" />
+
+                <RadioButton
+                    android:id="@+id/quwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="市委文件"
+                    android:textColor="@color/text_color2" />
+
+                <RadioButton
+                    android:id="@+id/quzhibumen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="市直部门文件"
+                    android:textColor="@color/text_color2" />
+
+                <RadioButton
+                    android:id="@+id/qita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他"
+                    android:textColor="@color/text_color2" />
+            </com.sdzx.xtbg.view.FlowRadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:text="收文日期：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:text="*"
+                android:textColor="@color/red"
+                android:layout_marginLeft="@dimen/dimen_2" />
+
+            <View style="@style/style_line_vertical" />
+
+            <TextView
+                android:id="@+id/document_add_choice_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="选择日期"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:text="来文机关：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <View style="@style/style_line_vertical" />
+
+            <Spinner
+                android:id="@+id/document_add_come_from"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:paddingRight="32dp"
+                android:text="编号：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <View style="@style/style_line_vertical" />
+
+            <EditText
+                android:id="@+id/document_add_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="20160649"
+                android:inputType="number"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_doc_laiwen_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:text="来文方式：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <View style="@style/style_line_vertical" />
+
+            <Spinner
+                android:id="@+id/document_add_come_from_mode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:paddingRight="23dp"
+                android:text="文件号：" />
+
+            <View style="@style/style_line_vertical" />
+
+            <EditText
+                android:id="@+id/document_add_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:text="来文份数：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <View style="@style/style_line_vertical" />
+
+            <EditText
+                android:id="@+id/document_add_come_from_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:text="成文时间：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <View style="@style/style_line_vertical" />
+
+            <TextView
+                android:id="@+id/document_add_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="选择日期"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:text="文件标题：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <View style="@style/style_line_vertical" />
+
+            <EditText
+                android:id="@+id/document_add_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_15">
+
+            <TextView
+                style="@style/style_text1"
+                android:text="截止日期：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <View style="@style/style_line_vertical" />
+
+            <EditText
+                android:id="@+id/document_add_end_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="没有请填 无"
+                android:textColorHint="@color/red"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/document_add_choice_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_5"
+                android:text="请选择日期"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/style_text1"
+                android:paddingBottom="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_15"
+                android:text="来文内容：" />
+
+            <EditText
+                android:id="@+id/document_add_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:background="@drawable/shape_doc_add_content_bg"
+                android:gravity="start"
+                android:hint="请输入内容"
+                android:padding="@dimen/dimen_5"
+                android:textColor="@color/text_color1"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@color/line_color" />
+
+            <TextView
+                style="@style/style_text1"
+                android:paddingBottom="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_15"
+                android:text="拟办人意见：" />
+
+            <EditText
+                android:id="@+id/document_add_niban"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:background="@drawable/shape_doc_add_content_bg"
+                android:gravity="start"
+                android:hint="请输入内容"
+                android:padding="@dimen/dimen_5"
+                android:textColor="@color/text_color1"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/style_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="附件格式："
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="img,png,gif,jpg,jpeg,doc,docx,pdf,xls,xlsx" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_0.5"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/doc_add_attach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/ic_doc_add_attach" />
+
+                    <View style="@style/style_line_vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.sdzx.xtbg.view.NoScrollListView
+                            android:id="@+id/document_add_attach_list_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="@null"
+                            android:divider="@color/line_color"
+                            android:dividerHeight="@dimen/dimen_0.5" />
+
+                        <com.sdzx.xtbg.view.NoScrollListView
+                            android:id="@+id/document_add_attach_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="@null"
+                            android:divider="@color/line_color"
+                            android:dividerHeight="@dimen/dimen_0.5" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:paddingRight="@dimen/dimen_16"
+                    android:text="拟办人：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <com.sdzx.xtbg.view.FlowRadioGroup
+                    android:id="@+id/niban_FlowRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+
+                    <RadioButton
+                        android:id="@+id/niban_radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <RadioButton
+                        android:id="@+id/niban_radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </com.sdzx.xtbg.view.FlowRadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingBottom="@dimen/dimen_5"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5">
+
+            <Button
+                android:id="@+id/document_add_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_login_btn"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

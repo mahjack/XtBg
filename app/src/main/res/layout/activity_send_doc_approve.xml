@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color4">
+
+    <include
+        android:id="@+id/send_doc_detail_approve_header"
+        layout="@layout/activity_header_2" />
+
+    <LinearLayout
+        android:id="@+id/send_doc_detail_approve_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_below="@id/send_doc_detail_approve_header"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10">
+
+        <RadioGroup
+            android:id="@+id/send_doc_detail_approve_rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/send_doc_detail_approve_rb_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同意" />
+
+            <RadioButton
+                android:id="@+id/send_doc_detail_approve_rb_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不同意" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signetBoard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_doc_detail_approve_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="@color/line_color" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:paddingLeft="@dimen/dimen_20"
+            android:text="@string/writing_pad"
+            android:textColor="@color/text_color2"
+            android:textSize="17sp" />
+
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:id="@+id/signature_pad"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@drawable/shape_edit" />
+
+        <LinearLayout
+            android:id="@+id/buttons_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/writing_pad_delete" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/writing_pad_save" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/send_doc_receiver_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_below="@id/signetBoard"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10">
+
+        <TextView
+            style="@style/style_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="接收人："
+            android:textSize="@dimen/dimen_16sp" />
+
+        <View style="@style/style_line_vertical" />
+
+
+
+        <TextView
+            android:id="@+id/send_doc_detail_approver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="" />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/document_process_idea"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@drawable/shape_edit"
+        android:gravity="start"
+        android:hint="@string/document_input"
+        android:padding="@dimen/dimen_5"
+        android:textColor="@color/text_color2"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_doc_receiver_ll"
+        android:layout_toEndOf="@+id/signetBoard"
+        android:id="@+id/linearLayout2">
+
+        <CheckBox
+            android:id="@+id/checkdx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/selector_ll"
+            android:paddingLeft="@dimen/dimen_10"
+            android:text="短信通知"
+            android:textColor="@color/text_color1" />
+
+    </LinearLayout>
+
+
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="@dimen/dimen_0.5"-->
+    <!--android:layout_marginLeft="@dimen/dimen_10"-->
+    <!--android:layout_marginRight="@dimen/dimen_10"-->
+    <!--android:background="@color/line_color" />-->
+
+    <LinearLayout
+        android:id="@+id/send_doc_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_5"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_5">
+
+        <Button
+            android:id="@+id/send_doc_detail_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_btn"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/document_send_clear"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="@dimen/dimen_5"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/selector_login_btn"-->
+        <!--android:text="重置"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="18sp" />-->
+    </LinearLayout>
+
+
+</RelativeLayout>

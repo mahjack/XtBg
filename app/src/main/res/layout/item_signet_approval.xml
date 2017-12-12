@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dimen_10">
+
+    <TextView
+        android:id="@+id/signet_apply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请人：张全蛋"
+        android:textColor="@color/text_color1"
+        android:textSize="@dimen/dimen_18sp" />
+
+    <TextView
+        android:id="@+id/signet_apply_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="用印单位：办公室"
+        android:textColor="@color/text_color1"
+        android:textSize="@dimen/dimen_18sp" />
+
+    <TextView
+        android:id="@+id/signet_approval_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signet_apply_name"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="事由"
+        android:textColor="@color/text_color2"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/signet_approval_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signet_approval_reason"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="2016-05-24 起至 2016-05-24 共计 3 天"
+        android:textColor="@color/orange"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/signet_approval_flow"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/signet_approval_time"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/selector_flow_btn"
+        android:gravity="center"
+        android:text="@string/base_flow"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <TextView
+        android:id="@+id/signet_approval_edit"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_below="@id/signet_approval_time"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_toStartOf="@id/signet_approval_flow"
+        android:background="@drawable/selector_edit_btn"
+        android:gravity="center"
+        android:text="@string/supervise_edit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp" />
+
+</RelativeLayout>

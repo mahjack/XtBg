@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差人：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/business_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差地点：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/business_detail_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差事由：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/business_detail_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差时间：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/business_detail_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="出差人数：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/business_detail_renshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="拟乘交通工具：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/business_detail_traffic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:paddingRight="64dp"
+                    android:text="经办人：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/dimen_10">
+
+                    <TextView
+                        android:id="@+id/tv_main_opinion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_business_agency_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_main_opinion"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_business_agency_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_depart_main_name"
+                        android:paddingTop="@dimen/dimen_5" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/snow"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="科室负责人意见：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/dimen_10">
+
+                    <ImageView
+                        android:id="@+id/iv_depart_opinion_sign"
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/dimen_60" />
+
+                    <TextView
+                        android:id="@+id/tv_depart_opinion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_depart_opinion_sign"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_depart_opinion_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_depart_opinion"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_depart_opinion_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_depart_opinion_name"
+                        android:paddingTop="@dimen/dimen_5" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bg"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="办公室负责人意见：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/dimen_10">
+
+                    <ImageView
+                        android:id="@+id/iv_depart_opinion_sign1"
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/dimen_60" />
+
+                    <TextView
+                        android:id="@+id/tv_bgs_opinion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_depart_opinion_sign1"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_bgs_opinion_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_bgs_opinion"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_bgs_opinion_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_bgs_opinion_name"
+                        android:paddingTop="@dimen/dimen_5" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_attendance_hr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/snow"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="分管负责人意见：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/dimen_10">
+
+                    <ImageView
+                        android:id="@+id/iv_hr_opinion_sign"
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/dimen_60" />
+
+                    <TextView
+                        android:id="@+id/tv_hr_opinion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_hr_opinion_sign"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_depart_hr_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_hr_opinion"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_depart_hr_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_depart_hr_name"
+                        android:paddingTop="@dimen/dimen_5" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="主要领导意见：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/dimen_10">
+
+                    <ImageView
+                        android:id="@+id/iv_minor_opinion_sign"
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/dimen_60" />
+
+                    <TextView
+                        android:id="@+id/tv_minor_opinion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_minor_opinion_sign"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_depart_minor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_minor_opinion"
+                        android:paddingTop="@dimen/dimen_5" />
+
+                    <TextView
+                        android:id="@+id/tv_depart_minor_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_depart_minor_name"
+                        android:paddingTop="@dimen/dimen_5" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="@dimen/dimen_15">-->
+
+            <!--<TextView-->
+            <!--style="@style/style_text1"-->
+            <!--android:text="主要负责人意见：" />-->
+
+            <!--<View style="@style/style_line_vertical" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingRight="@dimen/dimen_10">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_main_opinion"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="@dimen/dimen_5" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_depart_main_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@id/tv_main_opinion"-->
+            <!--android:paddingTop="@dimen/dimen_5" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_depart_main_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@id/tv_depart_main_name"-->
+            <!--android:paddingTop="@dimen/dimen_5" />-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_attendance_status"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_15"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="@string/meeting_state" />
+
+                <View style="@style/style_line_vertical" />
+
+                <RadioGroup
+                    android:id="@+id/attendance_state_rad"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/attendance_state_y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="同意" />
+
+                    <RadioButton
+                        android:id="@+id/attendance_state_n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拒绝" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_business_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:paddingLeft="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/style_text1"
+                    android:text="接收人：" />
+
+                <View style="@style/style_line_vertical" />
+
+                <TextView
+                    android:id="@+id/attendance_receive_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/checkdx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/selector_ll"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:text="短信通知"
+                    android:textColor="@color/text_color1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_attendance_opinion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/process_idea_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:text="审核意见："
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <EditText
+                    android:id="@+id/attendance_audit_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_marginBottom="@dimen/dimen_5"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:background="@drawable/shape_edit"
+                    android:gravity="start"
+                    android:hint="请填写审核意见"
+                    android:padding="@dimen/dimen_5"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sing_board"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_20"
+                android:text="@string/writing_pad"
+                android:textColor="@color/text_color2"
+                android:textSize="17sp" />
+
+            <com.github.gcacace.signaturepad.views.SignaturePad
+                android:id="@+id/signature_pad"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/shape_edit" />
+
+            <LinearLayout
+                android:id="@+id/buttons_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/clear_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/writing_pad_delete" />
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/writing_pad_save" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

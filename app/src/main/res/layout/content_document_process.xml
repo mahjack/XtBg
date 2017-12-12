@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/process_agree_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/selector_ll"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/process_agree"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radiobutton_selector"
+                    android:checked="false"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/document_agree"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <RadioButton
+                    android:id="@+id/process_read"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20"
+                    android:button="@drawable/radiobutton_selector"
+                    android:checked="false"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/document_read"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <RadioButton
+                    android:id="@+id/process_agree_idea"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20"
+                    android:button="@drawable/radiobutton_selector"
+                    android:checked="false"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/document_agree_idea"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_20"
+                android:text="@string/writing_pad"
+                android:textColor="@color/text_color2"
+                android:textSize="17sp" />
+
+            <com.github.gcacace.signaturepad.views.SignaturePad
+                android:visibility="gone"
+                android:id="@+id/signature_pad"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/shape_edit" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/buttons_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/clear_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/writing_pad_delete" />
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/writing_pad_save" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/process_idea_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/text_color1"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"/>
+
+            <EditText
+                android:id="@+id/document_process_idea"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/shape_edit"
+                android:gravity="start"
+                android:hint="@string/document_input"
+                android:padding="@dimen/dimen_5"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/process_leader_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/selector_ll"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:id="@+id/process_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:id="@+id/process_leader_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/process_office_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/selector_ll"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:id="@+id/process_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:id="@+id/process_office_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/process_department_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/selector_ll"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:id="@+id/process_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:id="@+id/process_department_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <!--全部人员-->
+        <LinearLayout
+            android:id="@+id/process_all_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/selector_ll"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:id="@+id/process_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <TextView
+                android:id="@+id/process_all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/checkdx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:paddingLeft="@dimen/dimen_10"
+            android:textColor="@color/text_color1"
+            android:text="短信通知"
+            android:background="@drawable/selector_ll"/>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/process_message_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/selector_ll"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <CheckBox
+                android:id="@+id/process_message"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:button="@drawable/radiobutton_selector"
+                android:gravity="center|end"
+                android:text="@string/document_message"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <EditText
+                android:id="@+id/document_process_message"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_70"
+                android:layout_margin="@dimen/dimen_5"
+                android:background="@drawable/shape_edit"
+                android:gravity="start"
+                android:hint="@string/document_message_hint"
+                android:padding="@dimen/dimen_5"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/dimen_16sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

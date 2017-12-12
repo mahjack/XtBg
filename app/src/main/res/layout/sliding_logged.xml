@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/papayawhip">
+    <include layout="@layout/activity_header"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:id="@+id/logged_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@null"
+            android:listSelector="@null"
+            android:divider="@color/line_color"
+            android:dividerHeight="@dimen/dimen_0.5"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
