@@ -20,6 +20,7 @@ public class WelcomeActivity extends Activity {
         preferences = getSharedPreferences("info", Activity.MODE_PRIVATE);
         createFile();
         startMain();
+
     }
 
     /**
